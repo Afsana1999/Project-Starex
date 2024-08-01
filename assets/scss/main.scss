@@ -1,0 +1,96 @@
+@import './utils/mixins';
+@import './utils/variables';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/step-by-step';
+@import './layout/pickUpPoints';
+@import './layout/services';
+@import './layout/starex-about';
+@import './layout/calculator';
+@import './layout/news';
+@import './layout/mobile-app';
+@import './partial/conditional/condition-paragraph';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family: 'sans-serif', 'Arial';
+}
+.container{
+    padding: 0 20rem;
+}
+.row{
+    display: flex;
+}
+section{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+footer{
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+.color-black a{
+    color: rgb(83, 82, 82);
+    font-weight: 500;
+}
+.color-black{
+    color: rgb(83, 82, 82);
+}
+.color-white a{
+    color: $thirdColor;
+    font-weight: 500;
+}
+.header-backround-pages{
+    background-color: #F5F5F5;
+}
+.btn-yellow{
+    color: #F5A214;
+    border-color: #F5A214;
+    font-weight: 500;
+}
+.header-border{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+    background-color: white;
+}
+.blue-fill{
+    fill: blue;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.col-1{
+    width: calc(100% / 12 * 1);
+}
+.col-2{
+    width: calc(100% / 12 * 2);
+}
+.col-3{
+    width: calc(100% / 12 * 3);
+}
+.col-4{
+    width: calc(100% / 12 * 4);
+}
+.col-5{
+    width: calc(100% / 12 * 5);
+}
+.col-6{
+    width: calc(100% / 12 * 6);
+}
+.col-8{
+    width: calc(100%/12*8);
+}
+.col-9{
+    width: calc(100%/12*9);
+}
+.col-10{
+    width: calc(100%/12*10);
+}
+.col-12{
+    width: calc(100%/12*12);
+}
+

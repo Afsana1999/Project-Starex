@@ -1,0 +1,57 @@
+#step-by-step {
+   
+    .title{
+        @include primaryTitle
+    }
+    .steps{
+
+        .step-login-order-payment-delivry{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+
+            >h4{
+                font-size: $font-19;
+                font-weight: 500;
+            }
+            >p{
+                font-size: $font-16;
+                color: $secondColor;
+                padding-top: .7rem;
+                
+                
+            }
+            .icon{
+                background-color: #4274F6;
+                font-size: 20px;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 1rem;
+                align-items: center;
+                align-content: center;
+                margin-bottom: 3rem;
+                >i{
+                    color: $thirdColor;
+                }
+            
+            }
+        }
+
+    }
+    .btn{
+        @include btn-universal
+    }
+
+    
+}
+@media (min-width: 772px) and (max-width:992px){
+  #step-by-step  .steps{
+        width: 100%;
+        .step-login-order-payment-delivry{
+            width: 50%;
+        }
+    }
+
+}

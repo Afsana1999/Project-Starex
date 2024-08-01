@@ -1,0 +1,29 @@
+@mixin btn-universal{
+    padding: .8rem;
+    background-color: $primaryColor;
+    color: $thirdColor;
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    .btn-universal:hover{
+        background-color: rgba(101, 101, 180, 0.9)
+    }
+}
+
+@mixin primaryTitle($align: center, $font: $font-24){
+    text-align: $align;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+
+    >h3{
+        padding-top: .5rem;
+        font-size: $font;
+    }
+    >p{
+        font-size: $font-16;
+        padding-top: 1rem;
+        color: $secondColor;
+    }
+}

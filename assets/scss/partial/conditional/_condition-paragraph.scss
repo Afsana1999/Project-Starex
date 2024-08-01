@@ -1,0 +1,41 @@
+#condition-paragraph {
+    font-size: $font-16;
+   
+        ol { counter-reset: item;
+            line-height: 2rem; 
+         }
+        li { 
+            display: block;
+          }
+        li:before {
+          content: counters(item, ".") "";
+          counter-increment: item;
+        }
+    
+    .list-in-h{
+        padding: 2rem 0;
+    }
+    .unordred{
+        li{
+            display: flex;
+            list-style-type: none;
+             line-height: 2rem;
+        }
+    }
+    .large{
+    font-size: 5rem;
+    font-family: RB;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 54, 78, .2);
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 1000;
+    }
+    .small{
+        font-size: 32px;
+        font-family: RM;
+        color: #003087;
+        padding-left: 30px;
+        margin-top: -33px;
+    }
+}

@@ -1,0 +1,13 @@
+#services { 
+    .card-title{
+        .title{
+            @include primaryTitle ($align: left)
+        }
+    }
+    .services-card{
+        padding-right: .5rem;
+        .title{
+            @include primaryTitle($align:left,$font: $font-16)
+        }
+    }
+}

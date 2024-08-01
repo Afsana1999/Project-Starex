@@ -1,0 +1,23 @@
+#mobile-app {
+    .title{
+        @include primaryTitle ($align: left)
+    }
+    .mobile-title{
+        padding: 10rem 3rem;
+
+    }
+    .mobile-svg{
+        width:  10rem;
+        height: 4rem;
+        padding-right: .5rem;
+        img{
+            width: 100%;
+        }
+    }
+    .mobile-image{
+        img{
+            width: 100%;
+        }
+    }
+
+}

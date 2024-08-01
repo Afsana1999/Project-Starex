@@ -1,0 +1,31 @@
+#pickUpPoints {
+    background-color: rgb(237, 238, 239);
+    .title{
+        @include primaryTitle($align: left)
+        
+    }
+    .pickUp-input{
+        align-items: center;
+    
+        
+    }
+    select{
+        width: 97%;
+        height: auto;
+        padding: .5rem;   
+        border-color: $secondColor;
+        border-radius: .3rem;
+        color: $secondColor;
+    }
+    .pickUp-option{
+        width: 100%;
+        select{
+            margin-bottom: 1rem;
+        }
+    }
+    }
+    .pickUp-item{
+      padding: 10rem 6rem;
+        
+    }
+

@@ -1,0 +1,690 @@
+footer {
+  background-color: #EDEEEF;
+}
+footer .footer-svg {
+  width: 7rem;
+  height: 4rem;
+  padding-top: 1rem;
+}
+footer .footer-svg img {
+  width: 100%;
+}
+footer .start-end {
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  justify-content: space-between;
+}
+footer h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+footer ul {
+  padding-top: 1rem;
+}
+footer ul li {
+  color: rgb(140, 140, 140);
+  list-style-type: none;
+  padding-top: 1rem;
+}
+footer .footer {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgb(206, 205, 205);
+}
+footer .copyright {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+header {
+  color: #fff;
+}
+header .backround {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(https://starex-assets.fra1.cdn.digitaloceanspaces.com/media/pictures/sayt_banner_usa_china_turkey_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .header-svg {
+  width: 7rem;
+  height: 4rem;
+  padding-top: 1rem;
+  margin-right: 0.5rem;
+}
+header .header-svg img {
+  width: 100%;
+}
+header .header-search {
+  padding-top: 10rem;
+  padding-top: 10rem;
+}
+header .header-search > input {
+  padding: 0.8rem 1rem;
+  width: 35rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: antiquewhite;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+header .header-search .btn {
+  padding: 0.8rem;
+  background-color: #005AFF;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  font-size: 1rem;
+}
+header .header-search .btn .btn-universal:hover {
+  background-color: rgba(101, 101, 180, 0.9);
+}
+header .slider-info {
+  text-align: left;
+  padding-top: 13rem;
+  font-size: 30px;
+}
+header .slider-info > h3 > p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+header .slider-info .btn {
+  padding: 0.8rem;
+  background-color: #005AFF;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  font-size: 1rem;
+}
+header .slider-info .btn .btn-universal:hover {
+  background-color: rgba(101, 101, 180, 0.9);
+}
+header .header-backround {
+  border-bottom: 1px solid rgb(140, 140, 140);
+  width: 100%;
+}
+header .header-list {
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+}
+header .header-list .header-list-up {
+  display: flex;
+}
+header .header-list .header-list-up .app-download {
+  align-items: center;
+  font-size: 0.7rem;
+}
+header .header-list .header-list-up .app-download > a {
+  background-color: #fff;
+  padding: 0.3rem;
+}
+header .header-list .header-list-up .header-list-login {
+  display: flex;
+  justify-content: right;
+  gap: 0.5rem;
+  align-items: center;
+}
+header .header-list .header-list-up .header-list-login > p {
+  border-right: 1px solid gray;
+  padding-right: 0.5rem;
+}
+header .header-list .header-list-up .header-list-login > svg {
+  width: 1.7rem;
+  height: auto;
+}
+header .header-list .header-list-down {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: center;
+}
+header .header-list .header-list-down .header-declare {
+  display: flex;
+  justify-content: end;
+}
+header .header-list .header-list-down .header-declare .btn {
+  padding: 0.8rem;
+  background-color: #005AFF;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  font-size: 1rem;
+}
+header .header-list .header-list-down .header-declare .btn .btn-universal:hover {
+  background-color: rgba(101, 101, 180, 0.9);
+}
+header .header-list .header-list-down .logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+header .header-list .header-list-down .header-list-wrapper {
+  align-content: center;
+  justify-content: center;
+}
+header .header-list .header-list-down .header-list-wrapper > ul {
+  display: flex;
+  list-style-type: none;
+}
+header .header-list .header-list-down .header-list-wrapper > ul > li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+header button {
+  margin-left: 1rem;
+  padding: 0.8rem;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid white;
+  font-size: 1rem;
+  background-color: transparent;
+}
+header li a {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .header-list {
+    width: 100%;
+  }
+  .header-list-wrapper {
+    display: none;
+  }
+  .header-list-down {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-declare {
+    display: flex;
+    justify-content: end;
+  }
+  header .header-list .header-list-up {
+    display: none;
+  }
+  .slider-info {
+    display: flex;
+    justify-content: center;
+  }
+  .slider-info button {
+    display: none;
+  }
+  .header-search {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+}
+#step-by-step .title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#step-by-step .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+#step-by-step .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+#step-by-step .steps .step-login-order-payment-delivry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+#step-by-step .steps .step-login-order-payment-delivry > h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#step-by-step .steps .step-login-order-payment-delivry > p {
+  font-size: 1.2rem;
+  color: rgb(140, 140, 140);
+  padding-top: 0.7rem;
+}
+#step-by-step .steps .step-login-order-payment-delivry .icon {
+  background-color: #4274F6;
+  font-size: 20px;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3rem;
+}
+#step-by-step .steps .step-login-order-payment-delivry .icon > i {
+  color: #fff;
+}
+#step-by-step .btn {
+  padding: 0.8rem;
+  background-color: #005AFF;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  font-size: 1rem;
+}
+#step-by-step .btn .btn-universal:hover {
+  background-color: rgba(101, 101, 180, 0.9);
+}
+
+@media (min-width: 772px) and (max-width: 992px) {
+  #step-by-step .steps {
+    width: 100%;
+  }
+  #step-by-step .steps .step-login-order-payment-delivry {
+    width: 50%;
+  }
+}
+#pickUpPoints {
+  background-color: rgb(237, 238, 239);
+}
+#pickUpPoints .title {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#pickUpPoints .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+#pickUpPoints .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+#pickUpPoints .pickUp-input {
+  align-items: center;
+}
+#pickUpPoints select {
+  width: 97%;
+  height: auto;
+  padding: 0.5rem;
+  border-color: rgb(140, 140, 140);
+  border-radius: 0.3rem;
+  color: rgb(140, 140, 140);
+}
+#pickUpPoints .pickUp-option {
+  width: 100%;
+}
+#pickUpPoints .pickUp-option select {
+  margin-bottom: 1rem;
+}
+
+.pickUp-item {
+  padding: 10rem 6rem;
+}
+
+#services .card-title .title {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#services .card-title .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+#services .card-title .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+#services .services-card {
+  padding-right: 0.5rem;
+}
+#services .services-card .title {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#services .services-card .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+}
+#services .services-card .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+
+#starex-about .title {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#starex-about .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+#starex-about .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+#starex-about .title {
+  padding-left: 0.5rem;
+}
+#starex-about .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -o-object-position: center;
+     object-position: center;
+  height: 54.5rem;
+}
+#starex-about .about {
+  align-content: center;
+  padding-left: 18rem;
+}
+#starex-about h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(89, 89, 89);
+}
+#starex-about p {
+  font-size: 1.1rem;
+  padding: 0.4rem 0;
+  color: rgb(89, 89, 89);
+}
+#starex-about .info {
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+#starex-about svg {
+  transform: scale(0.7);
+}
+#starex-about .about-image {
+  background-color: #EDEEEF;
+}
+
+#calculator .title {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#calculator .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+#calculator .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+#calculator .title {
+  padding-right: 20rem;
+}
+#calculator .calc-input {
+  margin-right: 1rem;
+}
+#calculator select {
+  width: 100%;
+  height: 3rem;
+  color: rgb(140, 140, 140);
+}
+#calculator input {
+  width: 99%;
+  margin-top: 1rem;
+  height: 3rem;
+}
+#calculator button {
+  width: 100%;
+  margin-top: 1rem;
+}
+#calculator .btn {
+  padding: 0.8rem;
+  background-color: #005AFF;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  font-size: 1rem;
+}
+#calculator .btn .btn-universal:hover {
+  background-color: rgba(101, 101, 180, 0.9);
+}
+#calculator .calc {
+  padding: 2.5rem;
+  background-color: #EDEEEF;
+}
+#calculator .total {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+#news .news-title {
+  margin-bottom: 2rem;
+  padding-left: 0.6rem;
+}
+#news .news-title h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+#news .news-card {
+  border: 1px solid rgb(203, 196, 196);
+  border-radius: 0 0 0.3rem 0.3rem;
+  margin: 0.7rem;
+}
+#news .news-card .img-up > img {
+  width: 100%;
+}
+#news h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#news p {
+  font-size: 1.2rem;
+  color: rgb(140, 140, 140);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#news .content-down {
+  padding: 1rem;
+}
+#news .news-date {
+  display: flex;
+  align-items: center;
+}
+#news span {
+  padding-top: 0.1rem;
+  padding-left: 0.2rem;
+}
+
+#mobile-app .title {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+#mobile-app .title > h3 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+#mobile-app .title > p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: rgb(140, 140, 140);
+}
+#mobile-app .mobile-title {
+  padding: 10rem 3rem;
+}
+#mobile-app .mobile-svg {
+  width: 10rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+}
+#mobile-app .mobile-svg img {
+  width: 100%;
+}
+#mobile-app .mobile-image img {
+  width: 100%;
+}
+
+#condition-paragraph {
+  font-size: 1.2rem;
+}
+#condition-paragraph ol {
+  counter-reset: item;
+  line-height: 2rem;
+}
+#condition-paragraph li {
+  display: block;
+}
+#condition-paragraph li:before {
+  content: counters(item, ".") "";
+  counter-increment: item;
+}
+#condition-paragraph .list-in-h {
+  padding: 2rem 0;
+}
+#condition-paragraph .unordred li {
+  display: flex;
+  list-style-type: none;
+  line-height: 2rem;
+}
+#condition-paragraph .large {
+  font-size: 5rem;
+  font-family: RB;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 54, 78, 0.2);
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 1000;
+}
+#condition-paragraph .small {
+  font-size: 32px;
+  font-family: RM;
+  color: #003087;
+  padding-left: 30px;
+  margin-top: -33px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "sans-serif", "Arial";
+}
+
+.container {
+  padding: 0 20rem;
+}
+
+.row {
+  display: flex;
+}
+
+section {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.color-black a {
+  color: rgb(83, 82, 82);
+  font-weight: 500;
+}
+
+.color-black {
+  color: rgb(83, 82, 82);
+}
+
+.color-white a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.header-backround-pages {
+  background-color: #F5F5F5;
+}
+
+.btn-yellow {
+  color: #F5A214;
+  border-color: #F5A214;
+  font-weight: 500;
+}
+
+.header-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+  background-color: white;
+}
+
+.blue-fill {
+  fill: blue;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-12 {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

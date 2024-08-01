@@ -1,0 +1,40 @@
+#starex-about {
+   .title{
+    @include primaryTitle($align:left)
+   }
+   .title{
+      padding-left: .5rem;
+   }
+   .image{
+      object-fit: cover;
+      overflow: hidden;
+      object-position: center;
+      height: 54.5rem;
+   }
+   .about{
+       align-content: center;
+       padding-left: 18rem;
+   }
+   h6{
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: rgb(89, 89, 89)
+      
+   }
+   p{
+      font-size: 1.1rem;
+      padding: .4rem 0;
+      color: rgb(89, 89, 89)
+   }
+   .info{
+      padding-left: 1rem;
+      padding-top: .3rem;
+   }
+    svg {
+         transform: scale(0.7);
+     }
+     .about-image{
+      background-color: #EDEEEF;
+     }
+
+}
