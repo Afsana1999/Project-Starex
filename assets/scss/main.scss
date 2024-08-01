@@ -10,6 +10,7 @@
 @import './layout/news';
 @import './layout/mobile-app';
 @import './partial/conditional/condition-paragraph';
+@import './partial/rates/rates.scss';
 
 *{
     margin: 0;
@@ -44,7 +45,7 @@ footer{
     color: $thirdColor;
     font-weight: 500;
 }
-.header-backround-pages{
+.universal-backround{
     background-color: #F5F5F5;
 }
 .btn-yellow{

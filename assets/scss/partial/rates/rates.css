@@ -1,0 +1,34 @@
+@charset "UTF-8";
+#rates .country-delivery {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#rates .country-rates {
+  position: absolute;
+  z-index: 110;
+}
+#rates .country-img {
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(https://starex.az/_next/static/image/assets/images/tariff-cover.298b3f915b038ef1b1128a33e02beb83.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:  relative;
+}
+#rates .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.5rem;
+}
+#rates label {
+  margin-left: 1rem;
+}
+#rates h2 {
+  font-size: 3rem;
+}
+#rates p {
+  font-size: 1.2rem;
+}/*# sourceMappingURL=rates.css.map */

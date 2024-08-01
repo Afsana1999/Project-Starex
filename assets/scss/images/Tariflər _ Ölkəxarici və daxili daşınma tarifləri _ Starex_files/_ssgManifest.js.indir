@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F404","\u002Fdasima-sertleri","\u002Fdaxilol","\u002Felaqe","\u002Fgizlilik-sertleri","\u002Fhaqqinda","\u002Ftarifler","\u002Fsifreni-deyis","\u002Fsifreni-yenile","\u002Fbaglama","\u002Fqeydiyyat","\u002Fxeberler","\u002Ffilial-ve-teslimat-noqteleri","\u002F","\u002Fxidmetler"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
