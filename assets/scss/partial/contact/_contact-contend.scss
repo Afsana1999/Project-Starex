@@ -1,0 +1,33 @@
+#contact-content{
+    font-size: 1.2rem;
+   .contact-wrapper{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(171, 170, 170, 0.3);
+    margin-right: 1.3rem;
+    margin-bottom: 1.3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    p{
+        padding: 1rem 0 1rem 1rem;
+    }
+   }
+   svg{
+    margin-right: .5rem;
+    color: #005AFF;
+   }
+   .location{
+    
+        border-radius: 50%;
+        background-color: #EEF8FF;
+        height: 3.8rem;
+        width: 3.8rem;
+        text-align: center;
+        align-content: center;
+        
+         
+   }
+   
+  
+
+}

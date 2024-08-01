@@ -11,6 +11,9 @@
 @import './layout/mobile-app';
 @import './partial/conditional/condition-paragraph';
 @import './partial/rates/rates.scss';
+@import './partial/rates/delivery-about';
+@import './partial/contact/contact-title';
+@import './partial/contact/contact-contend';
 
 *{
     margin: 0;
@@ -46,7 +49,7 @@ footer{
     font-weight: 500;
 }
 .universal-backround{
-    background-color: #F5F5F5;
+    background-color: #f6f6f6;
 }
 .btn-yellow{
     color: #F5A214;
@@ -63,6 +66,7 @@ footer{
 .center{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .col-1{
     width: calc(100% / 12 * 1);
