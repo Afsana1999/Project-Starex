@@ -11,3 +11,20 @@
         }
     }
 }
+
+@media (max-width: 992px) and (min-width: 500px){
+    #services{
+     .container{
+        .services-cards{
+            width: 100%;
+        }
+        .col-md-6{
+            width: calc(100%/12*6)
+        }
+        .row{
+            flex-wrap: wrap;
+        }
+     }
+       
+    }
+}

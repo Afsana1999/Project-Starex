@@ -1,5 +1,5 @@
-@import './utils/mixins';
 @import './utils/variables';
+@import './utils/mixins';
 @import './layout/footer';
 @import './layout/header';
 @import './layout/step-by-step';
@@ -24,7 +24,8 @@ html{
     font-family: 'sans-serif', 'Arial';
 }
 .container{
-    padding: 0 20rem;
+    padding: 0;
+    box-sizing: border-box;
 }
 .row{
     display: flex;
@@ -99,3 +100,8 @@ footer{
     width: calc(100%/12*12);
 }
 
+@media (max-width: 992px){
+    .container{
+        padding: 0;
+    }
+}

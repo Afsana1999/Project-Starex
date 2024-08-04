@@ -9,6 +9,10 @@
     
         
     }
+    .pickUp-map{
+        overflow: hidden;
+        
+    }
     select{
         width: 97%;
         height: auto;
@@ -25,7 +29,19 @@
     }
     }
     .pickUp-item{
-      padding: 10rem 6rem;
+      margin: 10rem 6rem;
         
     }
+
+@media (max-width: 992px ) and (min-width: 500px){
+    #pickUpPoints {
+        .col-md-12{
+            width: calc(100%/12*12);
+        }
+       .row{
+        flex-wrap: wrap;
+        }
+
+    }
+}
 

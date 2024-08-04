@@ -1,6 +1,7 @@
 header {
     color: $thirdColor; 
     .backround{
+        width: 100%;
         height: 100vh;
         background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(https://starex-assets.fra1.cdn.digitaloceanspaces.com/media/pictures/sayt_banner_usa_china_turkey_1.jpg);
         background-repeat: no-repeat;
@@ -13,27 +14,30 @@ header {
         height: 4rem;
         padding-top: 1rem;
         margin-right: .5rem;    
-        img{
-            width: 100%;
-        }
+     
+    }
+    img{
+        width: 100%;
     }
 
     .header-search{
         padding-top: 10rem;
         padding-top: 10rem;
-        >input{
-            padding: .8rem 1rem;
-            width: 35rem;
-            border-radius: 5px;
-            border: 1px solid $thirdColor;
-            background-color: antiquewhite;
-            font-size: 1rem;
-            margin-right: .5rem
-        }
-        .btn{
-            @include btn-universal
-        }
+     
+      
 
+    }
+    .btn{
+        @include btn-universal
+    }
+    input{
+        padding: .8rem 1rem;
+        width: 35rem;
+        border-radius: 5px;
+        border: 1px solid $thirdColor;
+        background-color: antiquewhite;
+        font-size: 1rem;
+        margin-right: .5rem
     }
     .slider-info{
         text-align: left;
@@ -63,10 +67,6 @@ header {
             display: flex;
             .app-download{
 
-                >a{
-                   background-color: $thirdColor;
-                   padding: .3rem;
-                }
                 align-items: center;
                 font-size: .7rem;
             }
@@ -130,49 +130,138 @@ header {
                 background-color: transparent;
          
                }
-               li a{
+            a{
                 text-decoration: none;
             }
-
-}
-@media(max-width:992px){
-    .header-list{
-      width: 100%;
-     
-    }
-    .header-list-wrapper{
-        display: none;
-    }
-    .header-list-down{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .header-declare{
-        display: flex;
-        justify-content: end;
-
-    }
-    header{
-        .header-list{
-            .header-list-up{
+            .btn-toggle{
                 display: none;
             }
-        }
-    }
-    .slider-info{
-        display: flex;
-        
-        justify-content: center;
-        button{
-            display: none;
-        }
-    }
-    .header-search{
-        width: 100%;
-    }
-    .col-md-6{
-        width: calc(100%/12*6);
-    }
-
+            .buttons-side{
+                display: none;
+            }
 }
+.responsive-header-search{
+    display: none;
+}
+@media (max-width:992px) and (min-width: 500px){
+
+    header{
+        width: 100%;
+        .col-md-6{
+            width: calc(100%/12*6);
+        }
+        .responsiv-backround{
+            background-color: white;
+        }
+        .backround{
+            width: 100%;
+            .header-backround{
+                .container{
+                    .row{
+                        .header-list{
+                            width: 100%;
+                            background-color: white;
+                            .header-list-up{
+                                .row{
+                                    .header-svg{
+                                        display: none;
+                                        color: black;
+                                    }
+                    
+                                }
+                                display: none;
+                            }
+                            .header-list-down{
+                                .header-list-wrapper{
+                                    display: none;
+                                }
+                                .logo{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                }
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                .btn-toggle{
+                                    display: inline-block;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 0.625rem;
+                                    border-radius: 50%;
+                                    background-color: rgb(172, 170, 170);
+                                    }
+                                .buttons-side{
+                                    display: inline-block;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    a{
+                                        background-color: #e4dfdf;
+                                        border-radius: 50%;
+                                        align-content: center;
+                                        padding: 1rem;
+                                        margin: .5rem;
+                                    }
+                                }
+                                .header-declare{
+                                    display: none;
+                                }
+                            }
+                                .header-list-down{
+                                    .logo{
+                                        align-items: center;
+                                        svg{
+                                            path{
+                                                stroke: blue;
+                                            
+                                            }
+                                        }
+                                    }
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+            .slider-info{
+                    text-align: center;
+                }
+
+            .header-search{
+                display: none;
+            }
+            }
+            .header-search{
+                display: inline-block ;
+                width: 100%;
+            }
+        }  
+   .responsive-header-search{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #F6F6F6;
+    h3{
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: $font-16;
+        padding-bottom: 1rem;
+    }
+    input{
+        width: 94.3%;
+        margin: 1rem 0;
+        height: 3rem;
+    }
+    .btn{
+        height: 3rem;
+        width: 95%;
+        @include btn-universal
+    }
+   }
+ }
+    
+
 
