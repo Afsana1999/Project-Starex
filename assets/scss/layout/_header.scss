@@ -153,76 +153,79 @@ header {
         .responsiv-backround{
             background-color: white;
         }
-        .backround{
-            width: 100%;
-            .header-backround{
-                .container{
-                    .row{
-                        .header-list{
-                            width: 100%;
-                            background-color: white;
-                            .header-list-up{
-                                .row{
-                                    .header-svg{
-                                        display: none;
-                                        color: black;
-                                    }
-                    
-                                }
+        
+            .row{
+                .header-list{
+                    width: 100%;
+                    background-color: white;
+                    .header-list-up{
+                        .row{
+                            .header-svg{
                                 display: none;
+                                color: black;
                             }
-                            .header-list-down{
-                                .header-list-wrapper{
-                                    display: none;
-                                }
-                                .logo{
-                                    display: flex;
-                                    justify-content: flex-start;
-                                }
-                                width: 100%;
-                                display: flex;
-                                justify-content: space-between;
-                                .btn-toggle{
-                                    display: inline-block;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    padding: 0.625rem;
-                                    border-radius: 50%;
-                                    background-color: rgb(172, 170, 170);
+            
+                        }
+                        display: none;
+                    }
+                    .header-list-down{
+                        .header-list-wrapper{
+                            display: none;
+                        }
+                        .logo{
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .btn-toggle{
+                            display: inline-block;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 1rem;
+                            margin-right: .5rem;
+                            border-radius: 50%;
+                            
+                            background-color: rgb(230, 227, 227);
+                            }
+                        .buttons-side{
+                            display: inline-block;
+                            display: flex;
+                            justify-content: flex-end;
+                            a{
+                                background-color: #e4dfdf;
+                                border-radius: 50%;
+                                align-content: center;
+                                padding: 1rem;
+                                margin: .5rem;
+                            }
+                        }
+                        .header-declare{
+                            display: none;
+                        }
+                    }
+                        .header-list-down{
+                            .logo{
+                                align-items: center;
+                                svg{
+                                    path{
+                                        stroke: blue;
+                                    
                                     }
-                                .buttons-side{
-                                    display: inline-block;
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    a{
-                                        background-color: #e4dfdf;
-                                        border-radius: 50%;
-                                        align-content: center;
-                                        padding: 1rem;
-                                        margin: .5rem;
-                                    }
-                                }
-                                .header-declare{
-                                    display: none;
                                 }
                             }
-                                .header-list-down{
-                                    .logo{
-                                        align-items: center;
-                                        svg{
-                                            path{
-                                                stroke: blue;
-                                            
-                                            }
-                                        }
-                                    }
-                                   
-                                }
-                            }
+                           
                         }
                     }
                 }
+            
+        .backround{
+            width: 100%;
+        
+              
+               
             .slider-info{
                     text-align: center;
                 }
@@ -260,6 +263,7 @@ header {
         width: 95%;
         @include btn-universal
     }
+   
    }
  }
     

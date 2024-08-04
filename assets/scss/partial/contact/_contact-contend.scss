@@ -23,11 +23,18 @@
         height: 3.8rem;
         width: 3.8rem;
         text-align: center;
-        align-content: center;
-        
-         
+        align-content: center; 
    }
    
-  
+}
 
+@media (max-width: 992px) and (min-width: 500px){
+    #contact-content{
+       .col-6{
+        width: 100%;
+       }
+       .row{
+        flex-wrap: wrap;
+       }
+    }
 }

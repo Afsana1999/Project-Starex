@@ -49,7 +49,7 @@
 }
 @media (max-width: 992px) and (min-width:767px){
    #step-by-step {
-    width: 100%;
+    width: calc(100%/12*5)
    }
 
 }

@@ -1,5 +1,6 @@
 
 #rates{
+    font-size: 14px;
   
     .country-delivery{
          display: flex;
@@ -35,7 +36,7 @@
         font-size: 3rem;
     }
     p{
-        font-size: 1.2rem;
+        font-size: 12px;
     
     }
     .flag-center{
@@ -56,4 +57,51 @@
         
     }
 
+}
+@media (max-width: 992px) and (min-width: 500px){
+    #rates {
+        p{
+            font-size: 14px;
+            padding-top: 1rem;
+        }
+        
+        input{
+            display: none;
+        }
+        .diferent-label{
+            background-color: blue;
+            border-radius: 4px;
+            color: white;
+            padding: 1rem .5rem;
+        }
+        label{
+            border: .5px solid rgb(173, 173, 173);
+            padding: 1rem .5rem;
+            border-radius: 4px;
+        }
+        .orange-color{
+            color: orange;
+            border: .5px solid orange;
+        }
+        .country-img{
+            color: black;
+            background-color: #EDEEEF;
+            background-image: none;
+        }
+        .country{
+            border: none;
+            align-items: center;
+            svg{
+                display: none;
+            }
+            p{
+                padding: 1rem .5rem;
+            }
+        }
+        
+            .row{
+                align-items: center;
+            }
+        
+    }
 }

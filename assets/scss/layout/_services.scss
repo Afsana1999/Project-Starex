@@ -4,7 +4,12 @@
             @include primaryTitle ($align: left)
         }
     }
+    .services-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
     .services-card{
+
         padding-right: .5rem;
         .title{
             @include primaryTitle($align:left,$font: $font-16)
@@ -15,16 +20,13 @@
 @media (max-width: 992px) and (min-width: 500px){
     #services{
      .container{
+         
         .services-cards{
-            width: 100%;
-        }
-        .col-md-6{
-            width: calc(100%/12*6)
-        }
-        .row{
-            flex-wrap: wrap;
+         grid-template-columns: repeat(2, 1fr);
+         p{
+            display: none;
+         }
         }
      }
-       
     }
 }

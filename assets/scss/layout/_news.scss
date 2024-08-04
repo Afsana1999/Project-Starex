@@ -1,4 +1,5 @@
 #news {
+    overflow: hidden;
    .news-title{
     margin-bottom: 2rem;
     padding-left: 0.6rem;
@@ -20,6 +21,7 @@
    h4{
     font-size: $font-19;  
     font-weight: 500;
+    overflow: hidden;
     }
     p{
         font-size: $font-16;
@@ -41,6 +43,37 @@
         padding-top: .1rem;
         padding-left: .2rem;
     }
+    .grid-row{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
 
 
+}
+@media (max-width: 992px) and (min-width: 500px) {
+    #news {
+        .card-container{
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .news-card{
+            flex: 0 0 auto;
+            
+        }
+        .grid-row{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+        }
+    
+
+    }
+}
+@media (max-width: 767px) and (min-width: 200px){
+    #news{
+        .grid-row{
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
 }

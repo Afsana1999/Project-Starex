@@ -18,3 +18,23 @@
     }
    
 }
+
+@media (max-width: 992px) and (min-width: 500px){
+    #delivery-about{
+        .weight{
+            background-color: white;
+            font-size: 1.2rem;
+            margin: 0;
+            border-radius: .3rem;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+           
+            p{
+                border: 1px solid rgb(185, 183, 183);
+            }
+            .even{
+                background-color: rgb(243, 241, 241);
+            }
+        }
+    }
+}

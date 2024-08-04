@@ -1,5 +1,5 @@
 footer {
-  background-color: #edeeef;
+  background-color: #EDEEEF;
 }
 footer .footer-svg {
   width: 7rem;
@@ -16,7 +16,7 @@ footer .start-end {
   justify-content: space-between;
 }
 footer h4 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 footer ul {
@@ -26,6 +26,7 @@ footer ul li {
   color: rgb(140, 140, 140);
   list-style-type: none;
   padding-top: 1rem;
+  font-size: 1.6rem;
 }
 footer .footer {
   padding-bottom: 3rem;
@@ -36,16 +37,50 @@ footer .copyright {
   align-content: center;
   align-items: center;
   padding-top: 2rem;
+  font-size: 12px;
+}
+footer .footer-responsive-tel {
+  display: none;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  footer h4 {
+    font-size: 1.6rem;
+  }
+  footer .row {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .footer-logo {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer-logo .start-end {
+    display: none;
+  }
+  footer .footer-content {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  footer .footer-content ul {
+    display: none;
+  }
+  footer .footer-responsive-tel {
+    display: inline-block;
+    font-size: 16px;
+  }
+  footer .copyright {
+    justify-content: center;
+    font-size: 16px;
+  }
+}
 header {
   color: #fff;
 }
 header .backround {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
-    url(https://starex-assets.fra1.cdn.digitaloceanspaces.com/media/pictures/sayt_banner_usa_china_turkey_1.jpg);
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(https://starex-assets.fra1.cdn.digitaloceanspaces.com/media/pictures/sayt_banner_usa_china_turkey_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -65,7 +100,7 @@ header .header-search {
 }
 header .btn {
   padding: 0.8rem;
-  background-color: #005aff;
+  background-color: #005AFF;
   color: #fff;
   border-radius: 2px;
   border: none;
@@ -90,11 +125,11 @@ header .slider-info {
 }
 header .slider-info > h3 > p {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 header .slider-info .btn {
   padding: 0.8rem;
-  background-color: #005aff;
+  background-color: #005AFF;
   color: #fff;
   border-radius: 2px;
   border: none;
@@ -144,18 +179,13 @@ header .header-list .header-list-down .header-declare {
 }
 header .header-list .header-list-down .header-declare .btn {
   padding: 0.8rem;
-  background-color: #005aff;
+  background-color: #005AFF;
   color: #fff;
   border-radius: 2px;
   border: none;
   font-size: 1rem;
 }
-header
-  .header-list
-  .header-list-down
-  .header-declare
-  .btn
-  .btn-universal:hover {
+header .header-list .header-list-down .header-declare .btn .btn-universal:hover {
   background-color: rgba(101, 101, 180, 0.9);
 }
 header .header-list .header-list-down .logo {
@@ -171,7 +201,7 @@ header .header-list .header-list-down .header-list-wrapper > ul {
   list-style-type: none;
 }
 header .header-list .header-list-down .header-list-wrapper > ul > li {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -210,140 +240,62 @@ header .buttons-side {
   header .responsiv-backround {
     background-color: white;
   }
-  header .backround {
-    width: 100%;
-  }
-  header .backround .header-backround .container .row .header-list {
+  header .row .header-list {
     width: 100%;
     background-color: white;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-up {
+  header .row .header-list .header-list-up {
     display: none;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-up
-    .row
-    .header-svg {
+  header .row .header-list .header-list-up .row .header-svg {
     display: none;
     color: black;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down {
+  header .row .header-list .header-list-down {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .header-list-wrapper {
+  header .row .header-list .header-list-down .header-list-wrapper {
     display: none;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .logo {
+  header .row .header-list .header-list-down .logo {
     display: flex;
     justify-content: flex-start;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .btn-toggle {
+  header .row .header-list .header-list-down .btn-toggle {
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.625rem;
+    padding: 1rem;
+    margin-right: 0.5rem;
     border-radius: 50%;
-    background-color: rgb(172, 170, 170);
+    background-color: rgb(230, 227, 227);
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .buttons-side {
+  header .row .header-list .header-list-down .buttons-side {
     display: inline-block;
     display: flex;
     justify-content: flex-end;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .buttons-side
-    a {
+  header .row .header-list .header-list-down .buttons-side a {
     background-color: #e4dfdf;
     border-radius: 50%;
     align-content: center;
     padding: 1rem;
     margin: 0.5rem;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .header-declare {
+  header .row .header-list .header-list-down .header-declare {
     display: none;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .logo {
+  header .row .header-list .header-list-down .logo {
     align-items: center;
   }
-  header
-    .backround
-    .header-backround
-    .container
-    .row
-    .header-list
-    .header-list-down
-    .logo
-    svg
-    path {
+  header .row .header-list .header-list-down .logo svg path {
     stroke: blue;
+  }
+  header .backround {
+    width: 100%;
   }
   header .backround .slider-info {
     text-align: center;
@@ -360,14 +312,14 @@ header .buttons-side {
     width: 100%;
     text-align: center;
     padding: 3rem 0;
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
   }
   .responsive-header-search h3 {
     font-weight: 500;
     margin-bottom: 1rem;
   }
   .responsive-header-search p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding-bottom: 1rem;
   }
   .responsive-header-search input {
@@ -379,7 +331,7 @@ header .buttons-side {
     height: 3rem;
     width: 95%;
     padding: 0.8rem;
-    background-color: #005aff;
+    background-color: #005AFF;
     color: #fff;
     border-radius: 2px;
     border: none;
@@ -398,10 +350,10 @@ header .buttons-side {
 }
 #step-by-step .title > h3 {
   padding-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 #step-by-step .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
 }
@@ -413,16 +365,16 @@ header .buttons-side {
   padding: 1rem;
 }
 #step-by-step .steps .step-login-order-payment-delivry > h4 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 500;
 }
 #step-by-step .steps .step-login-order-payment-delivry > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: rgb(140, 140, 140);
   padding-top: 0.7rem;
 }
 #step-by-step .steps .step-login-order-payment-delivry .icon {
-  background-color: #4274f6;
+  background-color: #4274F6;
   font-size: 20px;
   width: 7rem;
   height: 7rem;
@@ -436,7 +388,7 @@ header .buttons-side {
 }
 #step-by-step .btn {
   padding: 0.8rem;
-  background-color: #005aff;
+  background-color: #005AFF;
   color: #fff;
   border-radius: 2px;
   border: none;
@@ -448,7 +400,7 @@ header .buttons-side {
 
 @media (max-width: 992px) and (min-width: 767px) {
   #step-by-step {
-    width: 100%;
+    width: 41.6666666667%;
   }
 }
 #pickUpPoints {
@@ -463,10 +415,10 @@ header .buttons-side {
 }
 #pickUpPoints .title > h3 {
   padding-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 #pickUpPoints .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
 }
@@ -474,6 +426,7 @@ header .buttons-side {
   align-items: center;
 }
 #pickUpPoints .pickUp-map {
+  width: 100%;
   overflow: hidden;
 }
 #pickUpPoints select {
@@ -512,12 +465,16 @@ header .buttons-side {
 }
 #services .card-title .title > h3 {
   padding-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 #services .card-title .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
+}
+#services .services-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 #services .services-card {
   padding-right: 0.5rem;
@@ -531,23 +488,20 @@ header .buttons-side {
 }
 #services .services-card .title > h3 {
   padding-top: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 #services .services-card .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
 }
 
 @media (max-width: 992px) and (min-width: 500px) {
   #services .container .services-cards {
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
-  #services .container .col-md-6 {
-    width: 50%;
-  }
-  #services .container .row {
-    flex-wrap: wrap;
+  #services .container .services-cards p {
+    display: none;
   }
 }
 #starex-about .title {
@@ -559,10 +513,10 @@ header .buttons-side {
 }
 #starex-about .title > h3 {
   padding-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 #starex-about .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
 }
@@ -571,10 +525,10 @@ header .buttons-side {
 }
 #starex-about .image {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   height: 54.5rem;
 }
 #starex-about .about {
@@ -599,9 +553,46 @@ header .buttons-side {
   transform: scale(0.7);
 }
 #starex-about .about-image {
-  background-color: #edeeef;
+  background-color: #EDEEEF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #starex-about svg {
+    transform: scale(0.9);
+  }
+  #starex-about h6, #starex-about h3 {
+    color: white;
+    font-size: 24px;
+  }
+  #starex-about .title h3 {
+    font-size: 24px;
+  }
+  #starex-about p {
+    color: white;
+    font-size: 16px;
+  }
+  #starex-about .title > p {
+    color: white;
+    font-size: 16px;
+  }
+  #starex-about .about-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #starex-about .about {
+    position: absolute;
+    overflow: hidden;
+    padding-top: 15rem;
+  }
+  #starex-about .image {
+    overflow: hidden;
+  }
+  #starex-about .image img {
+    width: 100%;
+  }
+}
 #calculator .title {
   text-align: left;
   display: flex;
@@ -611,10 +602,10 @@ header .buttons-side {
 }
 #calculator .title > h3 {
   padding-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 #calculator .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
 }
@@ -640,7 +631,7 @@ header .buttons-side {
 }
 #calculator .btn {
   padding: 0.8rem;
-  background-color: #005aff;
+  background-color: #005AFF;
   color: #fff;
   border-radius: 2px;
   border: none;
@@ -651,16 +642,55 @@ header .buttons-side {
 }
 #calculator .calc {
   padding: 2.5rem;
-  background-color: #edeeef;
+  background-color: #EDEEEF;
 }
 #calculator .total {
   display: flex;
   align-items: center;
   height: 3rem;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+}
+#calculator .total-responsive {
+  display: none;
+}
+#calculator .zero {
+  display: none;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #calculator {
+    width: 100%;
+  }
+  #calculator .calc {
+    width: 100%;
+  }
+  #calculator .total {
+    display: none;
+  }
+  #calculator .zero {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.6rem;
+    margin-top: 1rem;
+    color: rgb(140, 140, 140);
+    font-size: 1.9rem;
+    border: 1px solid rgb(169, 167, 167);
+    border-radius: 3px;
+  }
+  #calculator .total-responsive {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 16px;
+  }
+}
+#news {
+  overflow: hidden;
+}
 #news .news-title {
   margin-bottom: 2rem;
   padding-left: 0.6rem;
@@ -678,11 +708,12 @@ header .buttons-side {
   width: 100%;
 }
 #news h4 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 500;
+  overflow: hidden;
 }
 #news p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: rgb(140, 140, 140);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
@@ -701,7 +732,31 @@ header .buttons-side {
   padding-top: 0.1rem;
   padding-left: 0.2rem;
 }
+#news .grid-row {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #news .card-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  #news .news-card {
+    flex: 0 0 auto;
+  }
+  #news .grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media (max-width: 767px) and (min-width: 200px) {
+  #news .grid-row {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
 #mobile-app .title {
   text-align: left;
   display: flex;
@@ -711,10 +766,10 @@ header .buttons-side {
 }
 #mobile-app .title > h3 {
   padding-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 #mobile-app .title > p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-top: 1rem;
   color: rgb(140, 140, 140);
 }
@@ -733,8 +788,24 @@ header .buttons-side {
   width: 100%;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #mobile-app .mobile-image {
+    display: none;
+  }
+  #mobile-app .mobile-title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #mobile-app .mobile-title .title h3 {
+    text-align: center;
+  }
+}
 #condition-paragraph {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 #condition-paragraph ol {
   counter-reset: item;
@@ -772,6 +843,9 @@ header .buttons-side {
   margin-top: -33px;
 }
 
+#rates {
+  font-size: 14px;
+}
 #rates .country-delivery {
   display: flex;
   margin-bottom: 2rem;
@@ -802,7 +876,7 @@ header .buttons-side {
   font-size: 3rem;
 }
 #rates p {
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 #rates .flag-center {
   display: flex;
@@ -820,6 +894,48 @@ header .buttons-side {
   padding: 0 0.5rem;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #rates p {
+    font-size: 14px;
+    padding-top: 1rem;
+  }
+  #rates input {
+    display: none;
+  }
+  #rates .diferent-label {
+    background-color: blue;
+    border-radius: 4px;
+    color: white;
+    padding: 1rem 0.5rem;
+  }
+  #rates label {
+    border: 0.5px solid rgb(173, 173, 173);
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+  }
+  #rates .orange-color {
+    color: orange;
+    border: 0.5px solid orange;
+  }
+  #rates .country-img {
+    color: black;
+    background-color: #EDEEEF;
+    background-image: none;
+  }
+  #rates .country {
+    border: none;
+    align-items: center;
+  }
+  #rates .country svg {
+    display: none;
+  }
+  #rates .country p {
+    padding: 1rem 0.5rem;
+  }
+  #rates .row {
+    align-items: center;
+  }
+}
 #delivery-about .weight {
   background-color: white;
   font-size: 1.2rem;
@@ -832,11 +948,27 @@ header .buttons-side {
   padding: 1.5rem 1.5rem;
 }
 #delivery-about .container {
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #delivery-about .weight {
+    background-color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    border-radius: 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  #delivery-about .weight p {
+    border: 1px solid rgb(185, 183, 183);
+  }
+  #delivery-about .weight .even {
+    background-color: rgb(243, 241, 241);
+  }
+}
 #contact-title h2 {
   font-size: 2.4rem;
 }
@@ -849,7 +981,7 @@ header .buttons-side {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #edeeef;
+  background-color: #EDEEEF;
   padding: 4rem 0;
 }
 #contact-content {
@@ -869,17 +1001,25 @@ header .buttons-side {
 }
 #contact-content svg {
   margin-right: 0.5rem;
-  color: #005aff;
+  color: #005AFF;
 }
 #contact-content .location {
   border-radius: 50%;
-  background-color: #eef8ff;
+  background-color: #EEF8FF;
   height: 3.8rem;
   width: 3.8rem;
   text-align: center;
   align-content: center;
 }
 
+@media (max-width: 992px) and (min-width: 500px) {
+  #contact-content .col-6 {
+    width: 100%;
+  }
+  #contact-content .row {
+    flex-wrap: wrap;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -892,7 +1032,6 @@ html {
 
 .container {
   padding: 0;
-  box-sizing: border-box;
 }
 
 .row {
@@ -928,8 +1067,8 @@ footer {
 }
 
 .btn-yellow {
-  color: #f5a214;
-  border-color: #f5a214;
+  color: #F5A214;
+  border-color: #F5A214;
   font-weight: 500;
 }
 
@@ -992,4 +1131,4 @@ footer {
   .container {
     padding: 0;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

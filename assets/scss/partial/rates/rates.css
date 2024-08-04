@@ -1,3 +1,6 @@
+#rates {
+  font-size: 14px;
+}
 #rates .country-delivery {
   display: flex;
   margin-bottom: 2rem;
@@ -28,7 +31,7 @@
   font-size: 3rem;
 }
 #rates p {
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 #rates .flag-center {
   display: flex;
@@ -44,4 +47,47 @@
   border-radius: 3px;
   height: 2rem;
   padding: 0 0.5rem;
+}
+
+@media (max-width: 992px) and (min-width: 500px) {
+  #rates p {
+    font-size: 14px;
+    padding-top: 1rem;
+  }
+  #rates input {
+    display: none;
+  }
+  #rates .diferent-label {
+    background-color: blue;
+    border-radius: 4px;
+    color: white;
+    padding: 1rem 0.5rem;
+  }
+  #rates label {
+    border: 0.5px solid rgb(173, 173, 173);
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+  }
+  #rates .orange-color {
+    color: orange;
+    border: 0.5px solid orange;
+  }
+  #rates .country-img {
+    color: black;
+    background-color: #EDEEEF;
+    background-image: none;
+  }
+  #rates .country {
+    border: none;
+    align-items: center;
+  }
+  #rates .country svg {
+    display: none;
+  }
+  #rates .country p {
+    padding: 1rem 0.5rem;
+  }
+  #rates .row {
+    align-items: center;
+  }
 }/*# sourceMappingURL=rates.css.map */

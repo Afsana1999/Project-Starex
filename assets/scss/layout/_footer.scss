@@ -25,6 +25,7 @@ footer {
             color: $secondColor;
             list-style-type: none;
             padding-top: 1rem;
+            font-size: $font-16;
         }
     }
     .footer{
@@ -36,5 +37,44 @@ footer {
         align-content: center;
         align-items: center ;
         padding-top: 2rem;
+        font-size: 12px;
+    }
+    .footer-responsive-tel{
+        display: none;
+    }
+}
+
+@media (max-width:992px) and (min-width: 500px){
+    footer{
+        h4{
+            font-size: $font-16;
+        }
+        .row{
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .footer-logo{
+            width: 100%;
+            .start-end{
+                display: none;
+            }
+            margin-bottom: 1.5rem;
+        }
+        .footer-content{
+            margin-bottom: 2rem;
+            width: 100%;
+            ul{
+                display: none;
+                
+            }
+        }
+        .footer-responsive-tel{
+            display: inline-block;
+            font-size: 16px;
+        }
+        .copyright{
+            justify-content: center;
+            font-size: 16px;
+        }
     }
 }

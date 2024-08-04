@@ -37,5 +37,44 @@
       margin-top: 1rem;
       font-size: $font-19;
    }
+   .total-responsive{
+      display: none;
+   }
+   .zero{
+      display: none;
+   }
    
+}
+
+@media (max-width: 992px) and (min-width: 500px) {
+   #calculator{
+      width: 100%;
+      
+      .calc{
+         width: 100%;
+      }
+      .total{
+         display: none;
+      }
+      .zero{
+         display: inline-block;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 2.6rem;
+         margin-top: 1rem;
+         color: $secondColor;
+         font-size: $font-19;
+         border: 1px solid rgb(169, 167, 167);
+         border-radius: 3px;
+      }
+      .total-responsive{
+         display: inline-block;
+         display: flex;
+         justify-content: center;
+         padding-top: 1rem;
+         font-size: 16px;
+      }
+     
+   }
 }
