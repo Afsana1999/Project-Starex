@@ -100,8 +100,26 @@ footer{
     width: calc(100%/12*12);
 }
 
-@media (max-width: 992px){
+@media (max-width: 1170px){
+    html{
+        font-size: 10px;
+    }
     .container{
         padding: 0 5rem;
     }
 }
+
+@media (max-width: 1476px){
+    .container{
+        padding: 0 8rem;
+    }
+    header{
+      .header-list .header-list-wrapper > ul > li{
+        font-size: 1.2rem;
+      }
+    }
+   
+}
+
+
+
