@@ -49,7 +49,24 @@
 }
 @media (max-width: 992px) and (min-width:767px){
    #step-by-step {
-    width: calc(100%/12*5)
+    .steps{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        .step-login-order-payment-delivry{
+            width: 100%;
+        }
+    }
    }
 
+}
+@media (max-width: 767px) and (min-width: 500px){
+    #setp-by-step{
+        .steps{
+            display: grid;
+            grid-template-columns: repeat(1, 100%);
+            .step-login-order-payment-delivry{
+                width: 100%;
+            }
+        }
+    }
 }

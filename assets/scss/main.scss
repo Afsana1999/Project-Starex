@@ -20,11 +20,11 @@
     padding: 0;
 }
 html{
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'sans-serif', 'Arial';
 }
 .container{
-    padding: 0;
+    padding: 0 15rem;
     
 }
 .row{
@@ -102,6 +102,6 @@ footer{
 
 @media (max-width: 992px){
     .container{
-        padding: 0;
+        padding: 0 5rem;
     }
 }
